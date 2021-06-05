@@ -1,4 +1,3 @@
-
 function generateButton() {
   var y = document.getElementById("buttonNumber").value;
   var random = Math.floor((Math.random() * y));
@@ -7,13 +6,13 @@ function generateButton() {
   	button = document.createElement("BUTTON");
     button.innerHTML = "Button";
     button.addEventListener("click", function() {
-    	let b = document.getElementById("ai");
+    	let text = document.getElementById("txt");
     	if (random == i) {
-      	b.innerHTML = "Win";
-        b.style.color = "green";
+      	text.innerHTML = "Win";
+        text.style.color = "green";
       } else {
-      	b.innerHTML = "Lose";
-        b.style.color = "red";
+      	text.innerHTML = "Lose";
+        text.style.color = "red";
       }
     })
     document.getElementById("1").appendChild(button);
