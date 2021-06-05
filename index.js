@@ -1,4 +1,3 @@
-
 function generateButton() {
   var y = document.getElementById("buttonNumber").value;
   var random = Math.floor((Math.random() * y));
