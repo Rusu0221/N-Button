@@ -1,3 +1,4 @@
+
 function generateButton() {
   var y = document.getElementById("buttonNumber").value;
   var random = Math.floor((Math.random() * y));
@@ -15,6 +16,6 @@ function generateButton() {
         text.style.color = "red";
       }
     })
-    document.getElementById("1").appendChild(button);
+    document.getElementById("createButton").appendChild(button);
   }
 }
